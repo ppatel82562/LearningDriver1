@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import static SeleniumPractise1.Utils.clickElement;
 
-public class CompareProduct {
+public class CompareProduct extends Utils {
 
 
     public void macPro() {

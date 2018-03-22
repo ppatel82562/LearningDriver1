@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -50,6 +51,18 @@ public class Utils extends BasePage{
         Assert.assertEquals(driver.findElement(actual).getText(),expected);
 
     }
+    public static void selectByVisibleText(By by,String text){
+        new Select(driver.findElement(by)).selectByVisibleText(text);
+
+    }
+    public static void selectbyIndex(By by,int number){
+        new Select(driver.findElement(by)).selectByIndex(number);
+    }
+
+    public static void selectbyValue(By by,String value){
+        new Select(driver.findElement(by)).selectByValue(value);
+    }
+
 
     }
 

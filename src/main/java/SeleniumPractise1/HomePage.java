@@ -6,6 +6,14 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage extends Utils  {
 
+    public void navigateToBookPage (){
+        driver.get("http://demo.nopcommerce.com/books");
+    }
+
+    public void navigateToClothingPage (){
+        driver.get("http://demo.nopcommerce.com/clothing");
+    }
+
     public void navigateToRegisterPage () {
 
         clickElement (By.linkText("Register"));
@@ -22,4 +30,6 @@ public class HomePage extends Utils  {
     }
 
 
+    public void navigateToHomePage() {
+    }
 }
