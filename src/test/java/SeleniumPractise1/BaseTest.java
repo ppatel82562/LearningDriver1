@@ -19,13 +19,13 @@ public class BaseTest extends BasePage {
     public void openBrowser(){
        System.setProperty("webdriver.gecko.driver","src\\test\\Resources\\BrowserDriver\\geckodriver.exe");
        driver = new FirefoxDriver();
-//
-//       //System.setProperty("webdriver.chrome.driver","src\\test\\Resources\\BrowserDriver\\chromedriver.exe");
-//       // driver = new ChromeDriver();
-//
+
+//       System.setProperty("webdriver.chrome.driver","src\\test\\Resources\\BrowserDriver\\chromedriver.exe");
+//        driver = new ChromeDriver();
+
 //        System.setProperty("webdriver.ie.driver","src\\test\\Resources\\BrowserDriver\\IEDriverServer.exe");
 //        driver = new InternetExplorerDriver();
-//
+
         driver.get("http://demo.nopcommerce.com/");
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.manage().window().maximize();
